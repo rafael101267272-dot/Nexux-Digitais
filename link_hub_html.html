@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexux Digitais | Links & Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: #030712;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(0, 242, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid #00f2ff;
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 38px;
+            font-weight: 900;
+            margin: 0 auto 20px;
+            background: #0b1528;
+            color: #ffffff;
+        }
+        .profile-img span { color: #00f2ff; }
+        h1 { font-size: 24px; font-weight: 700; letter-spacing: 2px; margin-bottom: 5px; }
+        .subtitle { font-size: 13px; color: #4cc9f0; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 32px; }
+        .links-wrapper { display: flex; flex-direction: column; gap: 16px; width: 100%; }
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-whatsapp { background: #00f2ff; color: #000814; box-shadow: 0 0 15px rgba(0, 242, 255, 0.3); }
+        .btn-whatsapp:hover { background: #4cc9f0; transform: translateY(-2px); }
+        .btn-discord { background: #5865F2; color: #ffffff; box-shadow: 0 0 15px rgba(88, 101, 242, 0.3); }
+        .btn-discord:hover { background: #4752C4; transform: translateY(-2px); }
+        .btn-outline { background: transparent; border: 1px solid rgba(0, 242, 255, 0.3); color: #ffffff; }
+        .btn-outline:hover { background: rgba(0, 242, 255, 0.05); border-color: #00f2ff; transform: translateY(-2px); }
+        .btn-link i { font-size: 20px; }
+        .btn-link .left-content { display: flex; align-items: center; gap: 14px; }
+        .services-section { margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+        .services-section h3 { font-size: 14px; color: #4cc9f0; letter-spacing: 2px; margin-bottom: 20px; text-transform: uppercase; }
+        .grid-services { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .service-card { background: rgba(255, 255, 255, 0.01); border: 1px solid rgba(255, 255, 255, 0.03); padding: 15px; border-radius: 12px; text-align: left; }
+        .service-card i { color: #00f2ff; font-size: 18px; margin-bottom: 8px; }
+        .service-card h4 { font-size: 14px; margin-bottom: 4px; }
+        .service-card p { font-size: 11px; color: #a5b1c2; line-height: 1.4; }
+        footer { margin-top: 40px; font-size: 11px; color: #57606f; }
+        
+        /* Toast de notificação */
+        .toast {
+            position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(100px);
+            background: #00f2ff; color: #000814; padding: 12px 24px; border-radius: 30px;
+            font-weight: 600; font-size: 14px; box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); z-index: 10;
+        }
+        .toast.show { transform: translateX(-50%) translateY(0); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-img">N<span>X</span></div>
+        <h1>NEXUX DIGITAIS</h1>
+        <div class="subtitle">Soluções que Impulsionam seu Negócio</div>
+
+        <div class="links-wrapper">
+            <a href="https://wa.me/5575983226461?text=Ol%C3%A1%2C%20gostaria de saber%20mais%20sobre%20os%20servi%C3%A7os%20digitais%21" target="_blank" class="btn-link btn-whatsapp">
+                <div class="left-content"><i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp</div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+            <a href="https://discord.gg/AEX6Usk6d" target="_blank" class="btn-link btn-discord">
+                <div class="left-content"><i class="fa-brands fa-discord"></i> Entrar no Servidor</div>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <a href="mailto:rafael378012@gmail.com" class="btn-link btn-outline">
+                <div class="left-content"><i class="fa-regular fa-envelope"></i> Enviar E-mail</div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+            <button onclick="copyToClipboard('75983226461', 'Número copiado!')" class="btn-link btn-outline">
+                <div class="left-content"><i class="fa-solid fa-phone"></i> Copiar Número</div>
+                <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+
+        <div class="services-section">
+            <h3>O que fazemos:</h3>
+            <div class="grid-services">
+                <div class="service-card">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <h4>Social Media</h4>
+                    <p>Gestão completa e estratégica de redes sociais.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h4>Tráfego Pago</h4>
+                    <p>Anúncios certeiros no Meta Ads e Google Ads.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Web Design</h4>
+                    <p>Landing pages de alta conversão e sites.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h4>Identidade</h4>
+                    <p>Logotipos e criativos com design premium.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>&copy; 2026 Nexux Digitais. Todos os direitos reservados.</footer>
+    </div>
+
+    <div class="toast" id="toast">Copiado com sucesso!</div>
+
+    <script>
+        function copyToClipboard(text, message) {
+            navigator.clipboard.writeText(text).then(() => {
+                const toast = document.getElementById('toast');
+                toast.innerText = message;
+                toast.classList.add('show');
+                setTimeout(() => { toast.classList.remove('show'); }, 2500);
+            });
+        }
+    </script>
+</body>
+</html>
